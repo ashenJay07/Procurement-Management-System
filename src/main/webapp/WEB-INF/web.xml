@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>Construction</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  	<servlet>
+		<servlet-name>new-order</servlet-name>
+		<servlet-class>com.controller.OrderCtrl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>new-order</servlet-name>
+		<url-pattern>/functions/order/new-order</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>get-order-by-id</servlet-name>
+		<servlet-class>com.controller.OrderCtrl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>get-order-by-id</servlet-name>
+		<url-pattern>/functions/order/approve-req</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>get-order-by-id-decline</servlet-name>
+		<servlet-class>com.controller.OrderCtrl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>get-order-by-id-decline</servlet-name>
+		<url-pattern>/functions/order/decline-req</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>view-order</servlet-name>
+		<servlet-class>com.controller.OrderCtrl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>view-order</servlet-name>
+		<url-pattern>/functions/order/view-req</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>approve-order</servlet-name>
+		<servlet-class>com.controller.OrderCtrl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>approve-order</servlet-name>
+		<url-pattern>/functions/order/approve</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>decline-order</servlet-name>
+		<servlet-class>com.controller.OrderCtrl</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>decline-order</servlet-name>
+		<url-pattern>/functions/order/decline</url-pattern>
+	</servlet-mapping>
+  
+</web-app>
